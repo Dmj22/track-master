@@ -1,4 +1,4 @@
-/document goes first so html & css will populate first
+//document goes first so html & css will populate first
 
 $(document).ready(function () {
     //today's date and time
@@ -15,6 +15,7 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
     //pull data from local storage at every hour
+    $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
